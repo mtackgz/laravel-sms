@@ -19,7 +19,7 @@ class Jetsms extends Driver
     public function send($options = [])
     {
 
-		xml = '<?xml version="1.0" encoding="iso-8859-9"?><message-context type="smmgsd"><username>'.$this->username.'</username><password>'.$this->password.'</password><outbox-name>'.$this->sender.'</outbox-name><reference>referance</reference><start-date></start-date><expire-date></expire-date><text>'.$this->text.'</text><message><gsmnos>'.$this->recipients[0].'</gsmnos></message></message-context>';
+	$xml = '<?xml version="1.0" encoding="iso-8859-9"?><message-context type="smmgsd"><username>'.$this->username.'</username><password>'.$this->password.'</password><outbox-name>'.$this->sender.'</outbox-name><reference>referance</reference><start-date></start-date><expire-date></expire-date><text>'.$this->text.'</text><message><gsmnos>'.$this->recipients[0].'</gsmnos></message></message-context>';
 
         try {
             $response = $this->client->request('POST', $this->baseUrl, [
