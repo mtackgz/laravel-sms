@@ -100,5 +100,19 @@ return [
         'options' => [
             //
         ]
-    ]
+    ],
+    
+    
+    /**
+     * Jetsms driver settings
+     */
+    'jetsms' => [
+        'transport' => \Fowitech\Sms\Drivers\Jetsms::class,
+        'sender' => env('JETSMS_SENDER', ''),
+        'username' => env('JETSMS_USERNAME', ''),
+        'password' => env('JETSMS_PASSWORD', ''),
+        'options' => [
+            //
+        ]
+    ],
 ];
