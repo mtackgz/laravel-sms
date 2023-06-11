@@ -5,7 +5,7 @@ return [
     /**
      * The SMS service to use.
      */
-    'driver' => env('SMS_DRIVER', 'netgsm'),
+    'driver' => env('SMS_DRIVER', 'jetsms'),
 
     /**
      * Twilio driver settings
@@ -101,7 +101,6 @@ return [
             //
         ]
     ],
-    
     
     /**
      * Jetsms driver settings
