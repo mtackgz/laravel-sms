@@ -15,6 +15,7 @@ List of supported gateways:
 - [Iletimerkezi](https://www.iletimerkezi.com/)
 - [Vatansms](https://www.vatansms.com/)
 - [Toplusms](https://toplusmspaketleri.com/)
+- [Jetsms](https://www.jetsms.net/)
 
 - Others are under way.
 
