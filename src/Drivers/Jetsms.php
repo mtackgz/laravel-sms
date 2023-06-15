@@ -6,7 +6,7 @@ use Exception;
 
 class Jetsms extends Driver
 {
-    private $baseUrl = 'https://api.jetsms.com.tr/SMS-Web/xmlsms';
+    private $baseUrl = 'www.biotekno.biz:8080/SMS-Web/xmlsms';
 
     public function __construct($options = [])
     {
