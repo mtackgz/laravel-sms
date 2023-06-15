@@ -22,7 +22,7 @@ class Jetsms extends Driver
 	$xml = '<?xml version="1.0" encoding="iso-8859-9"?><message-context type="smmgsd"><username>'.$this->username.'</username><password>'.$this->password.'</password><outbox-name>'.$this->sender.'</outbox-name><reference>referance</reference><start-date></start-date><expire-date></expire-date><text>'.$this->text.'</text><message><gsmnos>'.$this->recipients[0].'</gsmnos></message></message-context>';
 
         try {
-            $response = $this->client->request('GET', $this->baseUrl, [
+            $response = $this->client->request('POST', $this->baseUrl, [
                 'timeout' => 100,
                 'verify' => false,
                 'headers' => [
